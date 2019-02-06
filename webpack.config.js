@@ -21,5 +21,11 @@ module.exports = {
                 presets: ["@babel/env", "@babel/react"]
             }
         }]
+    },
+    
+    devServer: {
+        contentBase: path.resolve(__dirname, './client/dist'),
+        compress: true,
+        port: 8000
     }
 }
